@@ -11,9 +11,12 @@
     --color-font-light: #1e1e1e;
     --color-font-navbar-dark: #e0e0e0;
     --color-font-navbar-ligth: #5a5858;
+    
 }
 
+
 body {
+    transition: background-color 0.3s ease, color 0.3s ease;
     background-color: #1e1e1e;
     color: #e0e0e0;
     font-family: "poppins";
@@ -27,6 +30,14 @@ html[data-theme="dark"] body {
 html[data-theme="light"] body {
     background-color: var(--background-ligth);
     color: var(--color-font-light);
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: middle;
 }
 
 .theme-icon {
@@ -143,6 +154,12 @@ html[data-theme="light"] .h1{
 
 .title{
     font-size: 30px;
+    
+}
+
+#brand {
+    padding: 0.2rem 0.5rem;
+
 }
 html[data-theme="dark"] .title{
     color: var(--color-font-navbar-dark);
@@ -151,6 +168,7 @@ html[data-theme="dark"] .title{
 html[data-theme="light"] .title{
     color: var(--color-font-navbar-ligth) !important;
 }
+
 
 .a-section{
     color: #b0b0b0;
@@ -164,13 +182,14 @@ html[data-theme="light"] .title{
 a {
     color: var(--color-link);
     text-decoration: none;
-    padding: 2px 5px;
+    padding: 0.2rem 0.2rem;
     border-radius: 5px;
+
 }
 a:hover {
     box-sizing: border-box;
     background-color: var(--color-link-hover);
-    padding: 2px 5px;
+    padding: 0.2em 0.2rem;
     border-radius: 5px;
     transition: all 0.3s ease;
 }
@@ -359,3 +378,18 @@ html[data-theme="dark"] .a-footer {
 html[data-theme="light"] .a-footer {
     color: var(--color-font-light);
 }
+code {
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    padding: 2px 6px;
+    border-radius: 4px;
+    background-color: rgba(128, 128, 128, 0.2);
+    color: var(--color-font-dark);
+}
+
+html[data-theme="light"] code {
+    background-color: rgba(0, 0, 0, 0.1);
+    color: var(--color-font-light);
+}
+
+
