@@ -51,7 +51,7 @@ html[data-theme="light"] body {
 
 /* Sidebar */
 .right-sidebar {
-    width: 280px;
+    width: max(280px, 20vw);
     padding: 20px;
     height: calc(100vh - 60px); 
     overflow-y: auto;
@@ -194,6 +194,26 @@ a:hover {
     transition: all 0.3s ease;
 }
 
+html[data-theme="dark"] .sidebar-nav > li > a {
+    color: var(--color-font-navbar-dark);
+}
+
+html[data-theme="light"] .sidebar-nav > li > a {
+    color: var(--color-font-navbar-ligth);
+}
+
+.sidebar-nav-item {
+    transition: background-color 0.3s ease;
+    padding: 0.2em 0.2rem;
+}
+
+.sidebar-nav-item.active {
+    background-color: var(--color-link-hover);
+    padding: 0.2em 0.2rem;
+    border-radius: 5px;
+}
+
+
 /* Contenedor principal que mantiene todo centrado */
 .content-container {
     max-width: 800px; 
@@ -297,6 +317,11 @@ html[data-theme="light"] .navbar-toggler-icon {
 .mobile-sidebar {
     padding: 20px;
     border-top: 1px solid #abaaaa;
+    height: calc(100vh - 60px);
+    text-align: left;
+}
+.mobile-sidebar ul {
+    text-align: left;
 }
 html[data-theme="dark"] .mobile-sidebar{
     background-color: var(--background-dark);

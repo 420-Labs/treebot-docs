@@ -45,7 +45,7 @@
     </header>
 <!-- ----------------------------------------------END NAVBAR---------------------------------------------- -->
 
-    <main>
+    <main id="content">
         <section id="">
             <div class="container-fluid">
                 <div class="row justify-content-center">
@@ -53,7 +53,7 @@
                     <div class="col-lg-8 col-xl-7 content-container container-1">
                         <!-- Título con ícono con el estilo determinado en h1 -->
                         <div class="d-flex align-items-center mb-3">
-                            <h1 class="mb-0" style="padding-top: 170px">🔏Terms of services and Privacy Policy</h1>
+                            <h1 class="mb-0" style="padding-top: 170px" id="terms-of-services-and-privacy-policy">🔏Terms of services and Privacy Policy</h1>
                         </div>
                     
                         <h5 style="padding-bottom: 40px; color: rgb(170, 169, 169);">Last Updated 2025-02-27 02:38 (UTC-3)</h5>
@@ -71,10 +71,10 @@
                             <p>By using our Service, you agree to the Privacy Policy and Terms of Service. If you do not agree with any part of
                             the Terms or Privacy Policy, you are not allowed to use our service</p>
 
-                            <h2 style="padding-top: 40px;">What is Treebot</h2>
+                            <h2 id="what-is-treebot" style="padding-top: 40px;">What is Treebot</h2>
                             <p>TreeBot is a Discord Application that allows you to have a tree in your server that you and the members can interact with</p>
             
-                            <h3>Bot details:</h3>
+                            <h3 id="bot-details">Bot details</h3>
                             <ul>
                                 <li>Username: <code>TreeBot</code></li>
                                 <li>User ID:</li>
@@ -96,7 +96,7 @@
 
                     <!-- Título con ícono con el estilo determinado en h1 -->
                         <div class="d-flex align-items-center mb-3">
-                            <h1 class="mb-0" style="padding-top: 40px;">Privacy Policy</h1>
+                            <h1 id="privacy-policy" class="mb-0" style="padding-top: 40px;">Privacy Policy</h1>
                         </div>
                         <!--------------------------------------- Contenido principal --------------------------------------->
                         <div class="content-text">
@@ -104,10 +104,10 @@
                             to do so by clicking "I agree" button during the creation of a profile in Bubble. We explicitly do not store any data that can 
                             lead to the identification of an individual outside Discord</p>
 
-                            <h2 style="padding-top: 40px;">What data do we collect</h2>
+                            <h2 id="what-data-do-we-collect" style="padding-top: 40px;">What data do we collect</h2>
                             <p>In order to provide the complete experience of the Service, we need to collect and user information from our users.</p>
             
-                            <h4>The information we collect includes:</h4>
+                            <h4 id="information-we-collect">The information we collect includes:</h4>
                             <ul>
                                 <li>Discord User ID (To link the messages and the settings to the user)</li>
                                 <li>The settings the user has set for the bot, (e.g. Fluent Chat Timeout)</li>
@@ -115,12 +115,12 @@
                                 <li>Logs in case of an Error, this helps us fixing the error</li>
                             </ul>
 
-                            <h3>Why we store your messages?</h3>
+                            <h3 id="why-we-store-your-messages">Why we store your messages?</h3>
                             <p>We need to store messages you have with the bot in order to provide you the experience of having a 
                             chat that understand past messages, for example, you are talking with the bot about a specific Computer, 
                             without context, you would have to repeat that you are talking about that computer. Simulation:</p>
 
-                            <h4>Storing messages enabled:</h4>
+                            <h4 id="storing-messages-enabled">Storing messages enabled:</h4>
                             <ul>
                                 <li>User: Hey, what do you think about the computer (the computer name)</li>
                                 <li>Bubble: Hey! Yes, i know it, it is a very interesting computer. What do you want to know about it?</li>
@@ -142,17 +142,11 @@
         <div class="right-sidebar d-none d-lg-block">
             <div class="sidebar-content">
                 <div class="sidebar-section">
-                    <h2 class="sidebar-title">What is Discord Bot</h2>
+                    <h2 class="sidebar-title">Contents</h2>
                 </div>
                 
                 <div class="sidebar-section">
-                    <h3 class="privacy-title"><a class="a-section" href="#Privacy-Policy">Privacy Policy</a></h3>
-                    <ul class="sidebar-nav">
-                        <li class="sidebar-nav-item">What data do we collect</li>
-                        <li class="sidebar-nav-item">How do we use this data?</li>
-                        <li class="sidebar-nav-item">Who has access to this Data?</li>
-                        <li class="sidebar-nav-item">For how long do we store your data?</li>
-                        <li class="sidebar-nav-item">How to request data deletion?</li>
+                    <ul class="sidebar-nav" id="desktop-menu">
                     </ul>
                 
                 </div>
@@ -165,18 +159,9 @@
     <div class="collapse navbar-collapse" id="sidebarContent">
         <div class="mobile-sidebar d-lg-none">
             <!-- El mismo contenido que el sidebar -->
-            <div class="sidebar-section text-center">
-                <h2 class="sidebar-title">What is Bubble Bot</h2>
-            </div>
             
             <div class="sidebar-section text-center">
-                <h3 class="privacy-title"><a class="a-section" href="#Privacy-Policy">Privacy Policy</a></h3>
-                <ul class="sidebar-nav">
-                    <li class="sidebar-nav-item">What data do we collect</li>
-                    <li class="sidebar-nav-item">How do we use this data?</li>
-                    <li class="sidebar-nav-item">Who has access to this Data?</li>
-                    <li class="sidebar-nav-item">For how long do we store your data?</li>
-                    <li class="sidebar-nav-item">How to request data deletion?</li>
+                <ul class="sidebar-nav" id="mobile-menu">
                 </ul>
             </div>
         </div>
@@ -185,8 +170,8 @@
     <footer class="footer">
         <div class="footer-divider"></div>
         <div class="footer-content">
-            <span>Treebot was developed by <a class="a-footer" href="https://github.com/chumbed10s"><i class="fa-brands fa-github"></i> chumbed10s</a></span>
-            <span id="website">This website was Designed and developed by <a class="a-footer" href="https://github.com/Agusfoutel"><i class="fa-brands fa-github icon-change"></i> Agusfoutel</a></div></span>
+            <span>Treebot was developed by <a class="a-footer" href="https://github.com/chumbed10s" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github"></i> chumbed10s</a></span>
+            <span id="website">This website was Designed and developed by <a class="a-footer" href="https://github.com/Agusfoutel" rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-github icon-change"></i> Agusfoutel</a></div></span>
     </footer>
       
     <!-- ❤️❤️diseñado para el mejor programador con mucho amor❤️❤️ -->
