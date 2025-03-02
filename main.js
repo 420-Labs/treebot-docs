@@ -39,12 +39,15 @@ function setTheme(theme) {
 
     if (theme === 'dark') {
         document.documentElement.setAttribute('data-theme', 'dark');
+        document.documentElement.setAttribute('data-bs-theme', 'dark');
         icon.innerHTML = 'dark_mode';
     } else if (theme === 'light') {
         document.documentElement.setAttribute('data-theme', 'light');
+        document.documentElement.setAttribute('data-bs-theme', 'light');
         icon.innerHTML = 'light_mode';
     } else {
         document.documentElement.setAttribute('data-theme', 'dark');
+        document.documentElement.setAttribute('data-bs-theme', 'dark');
         icon.innerHTML = 'dark_mode';
         theme = 'dark';
     }
@@ -99,7 +102,7 @@ function generarMenu() {
                 enlace.href = '#' + id;
             }
             
-            enlace.textContent = encabezado.textContent;
+            enlace.innerHTML = encabezado.innerHTML;
             
             // Aplicar sangría según el nivel del encabezado
             if (encabezado.tagName === 'H2') {
