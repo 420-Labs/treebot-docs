@@ -173,7 +173,7 @@ h1 {
     color: var(--color-link-hover-navbar);
 }
 
-a:not(.file-info):not(.download-link) {
+a:not(.file-info):not(.download-link):not(.a-footer) {
     color: var(--color-link);
     text-decoration: none;
     padding: 0.2rem 0.2rem;
@@ -353,8 +353,13 @@ a:not(.file-info):not(.download-link):hover {
 }
 
 .a-footer {
+    padding: 0.2rem 0.2rem;
     text-decoration: none;
     color: var(--color-font);
+}
+
+.a-footer:hover {
+    color: var(--color-font) !important;
 }
 
 code {
