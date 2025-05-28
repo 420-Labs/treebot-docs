@@ -2,9 +2,9 @@
 
 // Pages configuration for navigation
 const pages = [
-    {name: 'menu_home', url: 'treebot-docs/index.html', icon: 'home'},
-    {name: 'menu_terms', url: 'treebot-docs/docs/terms.html', icon: 'gavel'},
-    {name: 'menu_changelog', url: 'treebot-docs/docs/changelog.html', icon: 'history'},
+    {name: 'menu_home', url: '/treebot-docs/index.html', icon: 'home'},
+    {name: 'menu_terms', url: '/treebot-docs/docs/terms.html', icon: 'gavel'},
+    {name: 'menu_changelog', url: '/treebot-docs/docs/changelog.html', icon: 'history'},
     // Add more pages here
 ];
 
