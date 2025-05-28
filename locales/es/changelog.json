@@ -22,7 +22,7 @@
   "0-2-3_profile-nottrasnlated": "<span class=\"discord-command\">/perfil</span> mostraba <code><i>Not Translated (BACKGROUND.BACKGROUND-XX.NAME)</i></code> por cambios en cómo se manejan los códigos de idioma de los fondos.",
   "0-2-3_other-fixes": "Otros arreglos menores",
 
-  "0-2-2_title": "Bug fixes",
+  "0-2-2_title": "Arreglo de Bugs",
   "0-2-2_help-cmd-not-searching": "<i class=\"fa-solid fa-question me-2\"></i>El comando de ayuda no buscaba correctamente",
   "0-2-2_text1": "El comando <span class=\"discord-command\">/ayuda</span> no buscaba la info que querías. Bloqueaba todas las descripciones de comando como \"admin commands\" y esos no salían en help. ¡Todo eso ya fue arreglado!",
   "0-2-2_multilang-help": "Búsqueda de ayuda en varios idiomas",
@@ -35,6 +35,7 @@
 
   "shop-0-2": "Actualización de La Tienda",
   "type_improvements": "<i class=\"fa-solid fa-wand-magic-sparkles me-2\"></i>Mejoras",
+  "0-2_title": "Actualización de La Tienda",
   "0-2_TLDR": "<i class=\"fa-solid fa-question me-2\"></i>TLDR",
   "0-2_text1": "<i class=\"fa-solid fa-palette me-2\"></i>Tienda de personalización completamente rediseñada",
   "0-2_text2": "<i class=\"fa-solid fa-user me-2\"></i>Perfiles de Usuario",
