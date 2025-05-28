@@ -5,20 +5,31 @@ const DEFAULT_LANG = 'en';
 function getLang() {
     return localStorage.getItem('lang') || navigator.language.slice(0, 2) || DEFAULT_LANG;
 }
-
 async function loadLocaleFile(lang, page){
+    // Detectamos si es el index (root) o docs, para ajustar la ruta
+    // location.pathname da el path actual (ej: / o /index.html o /docs/terms.html)
+    let basePath = '../locales/';
+
+    // Si estamos en "home" (/, /index, /index.html), ponemos basePath a './locales/'
+    const path = window.location.pathname;
+    if (
+        path === '/' ||
+        path.match(/\/index(\.html)?$/i)
+    ) {
+        basePath = './locales/';
+    }
+
     try {
-        const response = await fetch(`../locales/${lang}/${page}.json`);
+        const response = await fetch(`${basePath}${lang}/${page}.json`);
         if (response.ok) {
             return await response.json();
         }
-
     } catch {}
 
     // Fallback to en
     if (lang !== 'en') {
         try {
-            const response = await fetch(`../locales/en/\${page}.json`);
+            const response = await fetch(`${basePath}en/${page}.json`);
             if (response.ok) {
                 return await response.json();
             }
@@ -27,7 +38,6 @@ async function loadLocaleFile(lang, page){
 
     return {};
 }
-
 // Load both, globals and page-specific translations then merge them
 async function loadLocales(page) {
     const lang = getLang();
