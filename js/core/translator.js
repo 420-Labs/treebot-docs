@@ -8,7 +8,7 @@ function getLang() {
 
 async function loadLocaleFile(lang, page){
     try {
-        const response = await fetch(`/locales/${lang}/${page}.json`);
+        const response = await fetch(`../locales/${lang}/${page}.json`);
         if (response.ok) {
             return await response.json();
         }
@@ -18,7 +18,7 @@ async function loadLocaleFile(lang, page){
     // Fallback to en
     if (lang !== 'en') {
         try {
-            const response = await fetch(`/locales/en/\${page}.json`);
+            const response = await fetch(`../locales/en/\${page}.json`);
             if (response.ok) {
                 return await response.json();
             }
