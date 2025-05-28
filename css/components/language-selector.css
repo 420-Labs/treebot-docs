@@ -1,0 +1,40 @@
+/* Estilos para el selector de idioma */
+.language-selector {
+    display: inline-flex;
+    align-items: center;
+}
+
+.language-btn {
+    background-color: transparent;
+    color: var(--color-font);
+    border: 1px solid var(--border-color);
+    padding: 4px 10px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.language-btn:hover,
+.language-btn:focus {
+    background-color: var(--color-link-hover);
+    color: var(--text-color-link-hover);
+    border-color: var(--color-link);
+}
+
+.dropdown-menu {
+    background-color: var(--background-container);
+    border: 1px solid var(--border-color);
+}
+
+.dropdown-item {
+    color: var(--color-font);
+}
+
+.dropdown-item:hover {
+    background-color: var(--color-link-hover);
+    color: var(--text-color-link-hover);
+}
+
+.dropdown-item.active {
+    background-color: var(--color-link-hover);
+    color: var(--text-color-link-hover);
+}

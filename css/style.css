@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import 'layout.css';
+@import 'components/menu.css';
+@import 'components/language-selector.css';
+@import 'components/theme-toggle.css';
+@import 'components/download.css';
+
+/* colores principales */
+:root {
+    /* Colores fijos que no cambian con el tema */
+    --color-link: #8125d8;
+    --color-link-hover: #8125d848;
+    --text-color-link-hover: #bd8aed;
+    --color-link-hover-navbar: #cdadeed1;
+    --bg-primary: var(--color-link) !important;
+
+    /* Colores que cambian según el tema - valores por defecto (dark) */
+    --background: #1e1e1e;
+    --background-container: #1e1e2d;
+    --color-font: #e0e0e0;
+    --color-font-navbar: #e0e0e0;
+    --border-color: #4c4c4c;
+    --mobile-bg: var(--background);
+    --code-bg: rgba(128, 128, 128, 0.2);
+    --navbar-toggler-icon: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(169, 169, 169, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+/* Sobreescritura para tema claro */
+html[data-theme="light"] {
+    --background: #f3f2f2;
+    --background-container: #ffffff;
+    --color-font: #1e1e1e;
+    --color-font-navbar: #0c0c0c;
+    --border-color: #8b8989;
+    --mobile-bg: #dddcdc;
+    --code-bg: rgba(0, 0, 0, 0.1);
+    --navbar-toggler-icon: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(220, 220, 220, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.icon-primary {
+    color: var(--color-link);
+    font-size: 1em;
+}
+
+.bg-primary {
+    background-color: var(--color-link) !important;
+}
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: var(--background);
+    color: var(--color-font);
+    font-family: "poppins", serif;
+    font-weight: 500;
+    height: 100vh;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;
+    background-color: var(--background);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: var(--color-link);
+    border: 4px solid var(--background);
+    background-clip: content-box;
+    border-radius: 10px;
+    cursor:grab;
+}
+
+body::-webkit-scrollbar-thumb:active {
+    cursor: grabbing;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: var(--background);
+}
+
+a {
+    padding: 0.2rem 0.2rem;
+    text-decoration: none;
+}
+
+a:not(.file-info):not(.download-link):not(.a-footer):not(.sidebar-nav-item > a) {
+    color: var(--color-link);
+    border-radius: 5px;
+}
+
+a:not(.file-info):not(.download-link):not(.sidebar-nav-item > a):hover {
+    box-sizing: border-box;
+    background-color: var(--color-link-hover);
+    color: var(--text-color-link-hover);
+    padding: 0.2em 0.2rem;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+code {
+    font-family: "Courier New", monospace;
+    font-size: 14px;
+    padding: 0.2rem 0.2rem;
+    border-radius: 4px;
+    background-color: var(--code-bg);
+    color: var(--color-font);
+}
+
+.privacy-title {
+    color: #e0e0e0;
+    font-size: 16px;
+    margin-bottom: 8px;
+    font-weight: normal;
+}
+
+#terms-of-services-and-privacy-policy {
+    padding-top: 100px;
+}
+
+h1 {
+    margin-top: 40px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.h1 {
+    color: var(--color-font-navbar);
+}
+
+.a-section {
+    color: #b0b0b0;
+    text-decoration: none;
+}
+
+.a-section:hover {
+    color: var(--color-link-hover-navbar);
+}

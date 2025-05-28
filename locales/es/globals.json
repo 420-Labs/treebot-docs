@@ -1,0 +1,15 @@
+{
+  "menu": "Menú",
+  "contents": "Contenidos",
+  "support_server": "Servidor de soporte",
+  "important": "Importante",
+  "username": "Nombre de usuario:",
+  "user_id": "ID de usuario:",
+  "invite_link": "Link de invitación:",
+  "footer_developed_by": "Treebot fue desarrollado por <a class=\"a-footer\" href=\"https://github.com/chumbed10s\" rel=\"noopener noreferrer\" target=\"_blank\"><i class=\"fa-brands fa-github\"></i> chumbed10s</a>",
+  "footer_website_by": "Sitio web diseñado y desarrollado por <a class=\"a-footer\" href=\"https://github.com/Agusfoutel\" rel=\"noopener noreferrer\" target=\"_blank\"><i class=\"fa-brands fa-github icon-change\"></i> Agusfoutel</a>",
+  "translated_by": "Traducido con IA, Por favor reporta cualquier error",
+  "menu_home": "Inicio",
+  "menu_terms": "Términos y condiciones",
+  "menu_changelog": "Actualizaciones"
+}

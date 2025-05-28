@@ -1,0 +1,186 @@
+.left-sidebar {
+    width: max(220px, 15vw);
+    padding: 20px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    position: fixed;
+    left: 0;
+    top: 60px;
+    background-color: var(--background);
+    color: var(--color-font);
+    border-right: 1px solid var(--border-color);
+    z-index: 1029;
+}
+
+/* Sidebar */
+.right-sidebar {
+    width: max(280px, 20vw);
+    padding: 20px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+    position: fixed;
+    right: 0;
+    top: 60px;
+    background-color: var(--background);
+    color: var(--color-font);
+    border-left: 1px solid var(--border-color);
+}
+
+.sidebar-title {
+    color: var(--color-link);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.sidebar-section {
+    margin-bottom: 25px;
+}
+
+.sidebar-nav {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+.sidebar-nav-item {
+    font-size: 16px;
+    cursor: pointer;
+    color: var(--color-font-navbar);
+    transition: background-color 0.3s ease;
+    padding: 0.2em 0.2rem;
+}
+
+.sidebar-nav-item:hover {
+    color: var(--color-link-hover-navbar);
+}
+
+/* Style for the <a> inside the menu item */
+.sidebar-nav-item > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    color: var(--color-font-navbar) !important;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}
+
+.sidebar-nav-item {
+    transition: all 0.3s ease-in-out;
+}
+
+.sidebar-nav-item.active {
+    background-color: var(--color-link-hover);
+    padding: 0.2em 0.2rem;
+    border-radius: 5px;
+    transform: translateX(5px);
+}
+
+/* Make sure the hover effect applies to the entire item */
+.sidebar-nav-item:hover {
+    background-color: var(--color-link-hover);
+    padding: 0.2em 0.2rem;
+    border-radius: 5px;
+}
+
+/* Estilos para el menú en celular */
+.mobile-sidebar {
+    padding: 20px;
+    border-top: 1px solid #abaaaa;
+    height: calc(100vh - 60px);
+    text-align: left;
+    background-color: var(--mobile-bg);
+    color: var(--color-font-navbar);
+}
+
+.mobile-sidebar ul {
+    text-align: left;
+}
+
+/* Asegura que el menú desplegable se muestre correctamente */
+.navbar-collapse {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+#sidebarContent {
+    padding-top: 20px;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    background-color: var(--background);
+    border-bottom: 1px solid var(--border-color);
+    overflow-y: hidden;
+}
+
+/* -------------------------------------Cambia el color del icono hamburguesa------------------------------------- */
+.navbar-toggler-icon {
+    background-image: var(--navbar-toggler-icon) !important;
+}
+
+/* Ajusta el contenido principal para que ocupe todo el ancho en móviles */
+@media (max-width: 991.98px) {
+    .left-sidebar {
+        display: none !important;
+    }
+    .content-container {
+        margin-left: 0 !important;
+    }
+    .main-content {
+        margin-right: 0;
+        width: 100%;
+    }
+}
+
+.feedback-section {
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+}
+
+.feedback-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.feedback-btn {
+    background-color: #333;
+    border: none;
+    color: #b0b0b0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feedback-btn:hover {
+    background-color: #444;
+    color: white;
+}
+
+.search-box {
+    background-color: #333;
+    border: none;
+    color: white;
+    border-radius: 4px;
+}
+
+.search-box-wrapper {
+    position: relative;
+}
+
+.search-shortcut {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 12px;
+}
