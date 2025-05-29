@@ -55,6 +55,7 @@
   "0-2_text16": "Wait... Server progress? Yes, Since the <span class=\"square-badge\">0.1.0</span>, Treebot was saving how many times you watered the tree, how many times you fertilized the tree, how many times you mega fertilized the tree, how many fruits you got, and the background you have bought. Well, it is now possible to see with <span class=\"discord-command\">/profile</span>",
   "0-2_text17": "<i class=\"fa-solid fa-apple-whole me-2\"></i>Fruits rates",
   "0-2_text18": "Fruit Rates have been implemented, now you will get a certain number of fruits depending on how long the tree is. Before this was always a certain possibility to get 1 fruit, now you have that possibility to get more fruit depending on the height.",
+  "0-2_text18-note": "Note: Fertilizers will make the fruits have more probabilities to appear, but does not give you more fruits.",
   "0-2_text19": "<i class=\"fa-solid fa-stopwatch me-2\"></i>Per-server cooldown",
   "0-2_text20": "Have you ever tried to water two different servers' trees at the same time and got a cooldown message? Now you can water as many server trees as you want at the same time! <i>This change does not modify the cooldown time, it just separates your cooldown time from the other servers.</i>",
   "0-2_text21": "<i class=\"fa-solid fa-lock me-2\"></i>Administration systems got better",

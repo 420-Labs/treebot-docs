@@ -56,6 +56,7 @@
   "0-2_text16": "¿Progreso por servidor? Sí, desde la <span class=\"square-badge\">0.1.0</span>, Treebot guarda cuántas veces regaste, fertilizaste, mega-fertilzaste, cuántas frutas juntaste y los fondos que compraste. ¡Ahora lo podés ver con <span class=\"discord-command\">/perfil</span>!",
   "0-2_text17": "<i class=\"fa-solid fa-apple-whole me-2\"></i>Tasas de fruta",
   "0-2_text18": "Ahora las tasas de fruta dependen de la altura del árbol. Antes había chances de conseguir solo 1, ahora podés conseguir más si el árbol es alto.",
+  "0-2_text18-note": "Nota: Los fertilizantes hacen que las frutas tengan más posibilidades de aparecer, pero no te dan más frutas.",
   "0-2_text19": "<i class=\"fa-solid fa-stopwatch me-2\"></i>Cooldown por servidor",
   "0-2_text20": "¿Te pasó de regar en dos servidores y tener mensaje de cooldown? Ahora podés regar todos los árboles de todos los servers al mismo tiempo. <i>Esto no cambia el tiempo de cooldown, solo separa el cooldown por servidor.</i>",
   "0-2_text21": "<i class=\"fa-solid fa-lock me-2\"></i>Mejoraron los sistemas de administración",
