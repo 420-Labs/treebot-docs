@@ -133,3 +133,12 @@ h1 {
 .a-section:hover {
     color: var(--color-link-hover-navbar);
 }
+
+h4 {
+    font-weight: 600;
+
+}
+
+h1, h2, h3, h4, h5, h6, p, span {
+    cursor: default;
+}

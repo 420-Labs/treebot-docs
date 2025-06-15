@@ -7,7 +7,8 @@
     <meta content="Read the Privacy Policy and ToS for TreeBot" data-i18n-attr="content:meta_description"
           name="description">
 
-    <link href="https://cdn.discordapp.com/avatars/1169844816176230480/fda103dacf6ee7179667786a6ae58f91.webp?size=4096" rel="icon"
+    <link href="https://cdn.discordapp.com/avatars/1169844816176230480/fda103dacf6ee7179667786a6ae58f91.webp?size=4096"
+          rel="icon"
           type="image/webp">
 
     <!-- Bootstrap CSS -->
@@ -42,17 +43,27 @@
                 <!-- Selector de idioma -->
                 <div class="language-selector ms-2">
                     <div class="dropdown">
-                        <button aria-expanded="false" class="btn btn-sm dropdown-toggle language-btn" data-bs-toggle="dropdown"
+                        <button aria-expanded="false" class="btn btn-sm dropdown-toggle language-btn"
+                                data-bs-toggle="dropdown"
                                 id="languageDropdown" type="button">
                             <i class="fa-solid fa-globe me-1"></i>
                             <span id="current-language">EN</span>
                         </button>
                         <ul aria-labelledby="languageDropdown" class="dropdown-menu dropdown-menu-end">
                             <li>
-                                <button class="dropdown-item" data-lang="en" type="button">English</button>
+                                <button class="dropdown-item" type="button" data-lang="en" data-i18n="language_en">
+                                    English
+                                </button>
                             </li>
                             <li>
-                                <button class="dropdown-item" data-lang="es" type="button">Español</button>
+                                <button class="dropdown-item" type="button" data-lang="es" data-i18n="language_es">
+                                    Español
+                                </button>
+                            </li>
+                            <li>
+                                <button class="dropdown-item" type="button" data-lang="fr" data-i18n="language_fr">
+                                    Français
+                                </button>
                             </li>
                         </ul>
                     </div>
@@ -62,7 +73,8 @@
                 </span>
             </div>
             <!-- Botón hamburguesa para celular -->
-            <button aria-controls="sidebarContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+            <button aria-controls="sidebarContent" aria-expanded="false" aria-label="Toggle navigation"
+                    class="navbar-toggler"
                     data-bs-target="#sidebarContent" data-bs-toggle="collapse" type="button">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -87,15 +99,513 @@
 
 
                     <div class="separator"></div>
+
                     <div class="box">
 
                         <div class="d-flex align-items-center justify-content-between">
-                            <h2 class=" mb-0 fs-2" id="vote-rewards-0-2-3" data-version="0.2.3"><i class="fa-solid fa-gift icon-primary me-2"></i>
+                            <h2 class=" mb-0 fs-2" data-version="1.0" id="climb-leaderboards-1-0">
+                                <i class="fa-solid fa-cart-shopping icon-primary me-2"></i>
+                                <span data-i18n="1_0-title">Climb The Leaderboards!</span>
+                            </h2>
+                            <div class="d-flex align-items-center justify-content-end flex-column">
+                                <span class="badge bg-primary" data-i18n="1-0_date">
+                                    <i class="fa-solid fa-calendar me-2"></i>2025-06-12
+                                </span>
+                                <span class="badge bg-primary mt-2 ms-auto"><i class="fa-solid fa-hashtag me-2"></i>V 1.0</span>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-start gap-2 flex-wrap mt-2">
+
+                            <span class="square-badge-secondary" data-i18n="type_features">
+                                <i class="fa-solid fa-gear me-2"></i>Features
+                            </span>
+                            <span class="square-badge-secondary" data-i18n="type_improvements">
+                                <i class="fa-solid fa-wand-magic-sparkles me-2"></i>Improvements
+                            </span>
+                            <span class="square-badge-secondary" data-i18n="type_fixes">
+                                <i class="fa-solid fa-bug me-2"></i>Fixes
+                            </span>
+                            <span class="square-badge-secondary" data-i18n="type_performance">
+                                <i class="fa-solid fa-bolt me-2"></i>Performance
+                            </span>
+                            <span class="square-badge-secondary" data-i18n="type_items">
+                                <i class="fa-solid fa-cart-shopping me-2"></i>Items
+                            </span>
+                            <span class="square-badge-secondary" data-i18n="type_adjustments">
+                                <i class="fa-solid fa-sliders me-2"></i>Adjustments
+                            </span>
+                        </div>
+
+                        <h3 class="mt-4" data-i18n="1_0-summary_title">
+                            <i class="fa-solid fa-list-ul me-2"></i>Summary
+                        </h3>
+
+                        <ul class="list-group mt-1">
+                            <li class="list-group-item text-secondary-emphasis" data-i18n="1_0-summary-french_added">
+                                <i class="fa-solid fa-language me-2"></i>French is now available (Thanks PSY!)
+                            </li>
+                            <li class="list-group-item text-secondary-emphasis" data-i18n="1_0-summary-leaderboards">
+                                <i class="fa-solid fa-trophy me-2"></i> Added Leaderboards
+                            </li>
+                            <li class="list-group-item text-secondary-emphasis" data-i18n="1_0-summary-backgrounds">
+                                <i class="fa-solid fa-image me-2"></i>Added More Tree Backgrounds
+                            </li>
+                            <li class="list-group-item text-secondary-emphasis"
+                                data-i18n="1_0-summary-name_improvements">
+                                <i class="fa-solid fa-tag me-2"></i>Tree names improvements
+                            </li>
+                            <li class="list-group-item text-secondary-emphasis" data-i18n="1_0-summary-design_changes">
+                                <i class="fa-solid fa-palette me-2"></i>Some changes in the design
+                            </li>
+                            <li class="list-group-item text-secondary-emphasis"
+                                data-i18n="1_0-summary-removed_useless_code">
+                                <i class="fa-solid fa-code me-2"></i>Removed code fragments that were not used
+                            </li>
+                            <li class="list-group-item text-secondary-emphasis" data-i18n="1_0-summary-webp_images">
+                                <i class="fa-solid fa-bolt me-2"></i>Improved bot speed by using webp images (+80%
+                                faster)
+                            </li>
+                            <li class="list-group-item text-secondary-emphasis"
+                                data-i18n="1_0-summary-price_adjustments">
+                                <i class="fa-solid fa-coins me-2"></i>Price adjustments
+                            </li>
+                            <li class="list-group-item text-secondary-emphasis" data-i18n="1_0-summary-app_emojis">
+                                <i class="fa-solid fa-smile me-2"></i>Using the new emoji system for bots
+                            </li>
+                            <li class="list-group-item text-secondary-emphasis" data-i18n="1_0-summary-badge_vault">
+                                <i class="fa-solid fa-award me-2"></i>Badge Vault Added
+                            </li>
+                            <li class="list-group-item text-secondary-emphasis" data-i18n="1_0-summary-oop_programming">
+                                <i class="fa-solid fa-code me-2"></i>Main features are now using OOP programming
+                                (Easier to maintain and more scalable)
+                            </li>
+                            <li class="list-group-item text-secondary-emphasis" data-i18n="1_0-summary-prepared_events">
+                                <i class="fa-solid fa-calendar me-2"></i>Code is now prepared for special events that
+                                will be added in the future (Easter, Halloween, etc.)
+                            </li>
+                            <li class="list-group-item text-secondary-emphasis" data-i18n="1_0-summary-admin_system">
+                                <i class="fa-solid fa-user-shield me-2"></i>Admin system improvements
+                            </li>
+                            <li class="list-group-item text-secondary-emphasis"
+                                data-i18n="1_0-summary-user_profile_command">
+                                <i class="fa-solid fa-user me-2"></i>Profile is now available right-clicking a user
+                            </li>
+                            <li class="list-group-item text-secondary-emphasis" data-i18n="1_0-summary-bugs">
+                                <i class="fa-solid fa-bug me-2"></i>Lots of bugs fixed... (and added)
+                            </li>
+                        </ul>
+
+                        <div class="separator my-4"></div>
+                        <h3 class="" data-i18n="1_0-changelog-title">
+                            <i class="fa-solid fa-list-ul me-2"></i>Detailed Changelog
+                        </h3>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-description">
+                            Phew...
+                            This update took a long time, and a lot of work,
+                            but it's finally here.
+                            We hope you enjoy it!
+                        </p>
+
+                        <h4 class="mt-5" data-i18n="1_0-changelog-name_improvements">
+                            <i class="fa-solid fa-tag me-2"></i>Name Improvements
+                        </h4>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-name_improvements-description">
+                            Since we implemented Tree names, we had to make some changes in how they are managed due
+                            to new requirements.</p>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-name_improvements-difference">
+                            Before, you could have a tree with no name, which was nice at some point, but with this
+                            update
+                            we had to force trees to always have a name.
+                            Don't worry, this doesn't mean you need to
+                            think
+                            of a creative name for your tree right now.
+                            If your tree doesn't have a custom name, it will
+                            just use the default name
+                            (<span class="square-badge">server name's Tree</span> or the one
+                            in your language,
+                            it will auto-update as soon
+                            as you change the server tree's language)
+                        </p>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-name_improvements-gradual">
+                            This is a gradual process,
+                            meaning that the tree name will appear as soon
+                            as you interact with
+                            it (water, fertilize, etc.).
+                        </p>
+
+                        <h4 class="mt-5" data-i18n="1_0-changelog-design_changes-title">
+                            <i class="fa-solid fa-palette me-2"></i>Design Changes
+                        </h4>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-design_changes-description">
+                            We have updated the font across the entire bot to a more modern and readable style.
+                            Additionally,
+                            we have made design updates to the shop,
+                            making it more spacious.
+                            Furthermore, purchased backgrounds in the <span class="discord-command">/profile</span>
+                            command
+                            now show only the background itself without the background name.
+                        </p>
+
+                        <h4 class="mt-5" data-i18n="1_0-changelog-removed_code-title">
+                            <i class="fa-solid fa-code me-2"></i>Removed Code
+                        </h4>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-removed_code-description">
+                            As you probably know, after some updates that changed features and commands, there was some
+                            code that was not that useful or efficient,
+                            so we did a little of a clean-up and removed it.
+                        </p>
+
+                        <h4 class="mt-5" data-i18n="1_0-changelog-webp_images-title">
+                            <i class="fa-solid fa-image me-2"></i>WebP Images
+                        </h4>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-webp_images-description">
+                            Treebot was using PNG images to display trees and shops.
+                            We decided to switch to WebP images now
+                            that the bot is verified,
+                            meaning that it can join more than 100 servers.
+                            If we continued
+                            using PNG images, the bot would be,
+                            at some point, overloading our servers due to the size
+                            of the images.
+                            Now, it's using webp images,
+                            which are smaller, and it's much faster too!
+                            Around 80% lighter!
+                            Pretty nice, right?
+                        </p>
+
+                        <h4 class="mt-5" data-i18n="1_0-changelog-badge_vault-title">
+                            <i class="fa-solid fa-tag me-2"></i>Badge Vault Added
+                        </h4>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-badge_vault-description">
+                            This is a brand-new feature where users of your server can contribute with money to upgrade
+                            the tree badge!
+                        </p>
+                        <!-- Images -->
+                        <ul class="list-group my-2">
+                            <li class="list-group-item text-secondary-emphasis d-flex flex-column">
+                                <span class="square-badge mb-2" data-i18n="1_0-changelog-badge_vault-tree_image">
+                                    Tree with Badge</span>
+                                <img alt="Tree with Badge" class="img-fluid mt-2 align-self-center"
+                                     src="../img/1_0-tree_badge.webp" style="max-width: 400px">
+                            </li>
+                            <li class="list-group-item text-secondary-emphasis d-flex flex-column">
+                                <span class="square-badge mb-2" data-i18n="1_0-changelog-badge_vault-command_image">
+                                    <span class="discord-command">/badge_vault</span> Command Menu</span>
+                                <img alt="Badge Command"
+                                     class="img-fluid mt-2 align-self-center rounded-3" src="../img/1_0-badge_cmd.png">
+
+                            </li>
+                        </ul>
+
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-badge_vault-related">
+                            Of course, Badge Vault was added as well to the <span
+                                class="discord-command">/profile</span>
+                            command,
+                            where you can see
+                            how much you or other users have contributed to the badge vault.
+                            A new button for quick access to the vault was added to the tree message.
+                        </p>
+
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-badge_vault-related_notifications">
+                            Contributing also triggers a notification on the channel you have set as your notification
+                            channel.
+                            This contains
+                            who contributed to the badge vault
+                            and how much the contribution was.
+                        </p>
+
+                        <!-- Table with the values of all the badges -->
+                        <div class="accordion" id="badgeAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button aria-controls="badgeValues" aria-expanded="false" class="accordion-button collapsed"
+                                            data-bs-target="#badgeValues" data-bs-toggle="collapse"
+                                            type="button">
+                                        <i class="fa-solid fa-tag me-2"></i>
+                                        <span data-i18n="1_0-changelog-badge_vault-table_header">Badges Value</span>
+                                    </button>
+                                </h2>
+                                <div class="accordion-collapse collapse" id="badgeValues">
+                                    <div class="accordion-body">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover align-middle">
+                                                <thead>
+                                                <tr>
+                                                    <th data-i18n="1_0-changelog-badge_vault-badge_name" scope="col">
+                                                        Badge
+                                                    </th>
+                                                    <th data-i18n="1_0-changelog-badge_vault-badge_level" scope="col">
+                                                        Level
+                                                    </th>
+                                                    <th data-i18n="1_0-changelog-badge_vault-badge_coins" scope="col">
+                                                        <i class="fa-solid fa-coins me-2"></i>Coins
+                                                    </th>
+                                                </tr>
+                                                </thead>
+                                                <tbody id="badgeValuesTable">
+                                                <tr>
+                                                    <td>
+                                                        <img alt="Badge 1" class="img-fluid"
+                                                             src="../img/badges/badge-01.webp" style="max-height: 3rem">
+                                                    </td>
+                                                    <td>1</td>
+                                                    <td>0 - 99</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img alt="Badge 2" class="img-fluid"
+                                                             src="../img/badges/badge-02.webp" style="max-height: 3rem">
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>100 - 249</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img alt="Badge 3" class="img-fluid"
+                                                             src="../img/badges/badge-03.webp" style="max-height: 3rem">
+                                                    </td>
+                                                    <td>3</td>
+                                                    <td>250 - 624</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img alt="Badge 4" class="img-fluid"
+                                                             src="../img/badges/badge-04.webp" style="max-height: 3rem">
+                                                    </td>
+                                                    <td>4</td>
+                                                    <td>625 - 1,562</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img alt="Badge 5" class="img-fluid"
+                                                             src="../img/badges/badge-05.webp" style="max-height: 3rem">
+                                                    </td>
+                                                    <td>5</td>
+                                                    <td>1,563 - 3,906</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img alt="Badge 6" class="img-fluid"
+                                                             src="../img/badges/badge-06.webp" style="max-height: 3rem">
+                                                    </td>
+                                                    <td>6</td>
+                                                    <td>3,907 - 9,765</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img alt="Badge 7" class="img-fluid"
+                                                             src="../img/badges/badge-07.webp" style="max-height: 3rem">
+                                                    </td>
+                                                    <td>7</td>
+                                                    <td>9,766 - 24-414</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img alt="Badge 8" class="img-fluid"
+                                                             src="../img/badges/badge-08.webp" style="max-height: 3rem">
+                                                    </td>
+                                                    <td>8</td>
+                                                    <td>24,415 - 61,035</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img alt="Badge 9" class="img-fluid"
+                                                             src="../img/badges/badge-09.webp" style="max-height: 3rem">
+                                                    </td>
+                                                    <td>9</td>
+                                                    <td>61,036 - 152,587</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img alt="Badge 10" class="img-fluid"
+                                                             src="../img/badges/badge-10.webp" style="max-height: 3rem">
+                                                    </td>
+                                                    <td>10</td>
+                                                    <td>152,588 - 381,469</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <img alt="Badge 11" class="img-fluid"
+                                                             src="../img/badges/badge-11.webp" style="max-height: 3rem">
+                                                    </td>
+                                                    <td>11</td>
+                                                    <td>381,470+</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h4 class="mt-5 " data-i18n="1_0-changelog-backgrounds_added">
+                            <i class="fa-solid fa-image me-2"></i> Added 18 Tree Backgrounds
+                        </h4>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-backgrounds_added_text">
+                            Added 18 new tree backgrounds.
+                            You can find them in the <span class="discord-command">
+                            /shop</span> command.
+                        </p>
+                        <img src="../img/1_0-new_backgrounds.png" alt="Added 18 Tree Backgrounds"
+                             class="img-fluid rounded-3">
+
+
+                        <h4 class="mt-5 " data-i18n="1_0-changelog-oop_programming">
+                            <i class="fa-solid fa-code me-2"></i> OOP Programming
+                        </h4>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-oop_programming_text">
+                            While this change will not affect you directly, TreeBot is now using OOP programming, which
+                            allows us to keep our code clean and maintainable. This also allows us to add new features
+                            with less re-coding, and faster updates.
+                        </p>
+
+
+                        <h4 class="mt-5 " data-i18n="1_0-changelog-special_events">
+                            <i class="fa-solid fa-calendar me-2"></i> Special Events
+                        </h4>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-special_events_text">
+                            We have prepared some scheduled events for the future,
+                            which will be added in the future (Easter, Halloween, etc.). There are no special events
+                            planned for now, but we will keep you updated if we do.
+                        </p>
+
+
+                        <h4 class="mt-5 " data-i18n="1_0-changelog-profile_user_command">
+                            <i class="fa-solid fa-user me-2"></i> Profile User Command
+                        </h4>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-profile_user_command_text">
+                            Tired of having to write
+                            <span class="square-badge-command">
+                                <span class="discord-command">/profile</span>
+                                <span class="discord-command">
+                                    <img src="https://freelogopng.com/images/all_img/1691730813discord-icon-png.png"
+                                    alt="user-logo" class="img-fluid rounded-circle" style="width: 1em; height: 1em;">
+                                    @user
+                                </span>
+                            </span>
+                             to see a user's
+                            profile? We know you are not, anyways, we added an option when right-clicking a user,
+                            so you can see its profile right away!
+                        </p>
+
+
+                        <h4 class="mt-5 " data-i18n="1_0-changelog-leaderboards">
+                            <i class="fa-solid fa-trophy me-2"></i> Leaderboards
+                        </h4>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-leaderboards_text">
+                            Probably the most requested feature so far, well, we added 15 leaderboards!
+                        </p>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-leaderboards_types_trees">
+                            You can now use the <span class="discord-command">/leaderboard</span> command to see the
+                            following leaderboards for the trees of all servers:
+                            <span class="square-badge ms-1">🌳 Metres</span>
+                            <span class="square-badge ms-1">🌳 Times Watered</span>
+                            <span class="square-badge ms-1">🌳 Times Fertilized</span>
+                            <span class="square-badge ms-1">🌳 Times Mega Fertilized</span>
+                            <span class="square-badge ms-1">🌳 Fruits Produced</span>
+                            <span class="square-badge ms-1">🌳 Backgrounds Owned</span>
+                            <span class="square-badge ms-1">🌳 Badge Vault</span>
+                        </p>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-leaderboards_types_user">
+                            Also, the leaderboards for users around the trees:
+                            <span class="square-badge ms-1">👤 Coins</span>
+                            <span class="square-badge ms-1">👤 Fertilizers</span>
+                            <span class="square-badge ms-1">👤 Mega Fertilizers</span>
+                            <span class="square-badge ms-1">👤 Times Watered</span>
+                            <span class="square-badge ms-1">👤 Times Fertilized</span>
+                            <span class="square-badge ms-1">👤 Times Mega Fertilized</span>
+                            <span class="square-badge ms-1">👤 Fruits Collected</span>
+                            <span class="square-badge ms-1">👤 Badge Vault Contribution</span>
+                        </p>
+
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-leaderboards_warning">
+                        <i><i class="fa-solid fa-lightbulb me-2"></i>As we changed the way tree names are displayed and
+                            how usernames are managed, you might see '???' as a tree name at first, don't worry,
+                            the leaderboards will start displaying names properly after trees start interacting</i>
+                        </p>
+
+                        <h4 class="mt-5 " data-i18n="1_0-changelog-french_translation">
+                            <i class="fa-solid fa-globe"></i> French added!
+                        </h4>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-french_translation_text">
+                            Thanks to PSY, we now have the bot fully translated into French! You can change it for your
+                            server in the <span class="discord-command">/server_lang</span> command. Please note that
+                            Discord client commands (such as slash command autocomplete) and ephemeral messages will
+                            always display in your Discord language settings.
+                        </p>
+
+                        <h4 class="mt-5 " data-i18n="1_0-changelog-app_emoji-title">
+                            <i class="fa-solid fa-smile me-2"></i>App Emojis
+                        </h4>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-app_emoji-text">
+                         When I started coding TreeBot, for emojis we had to add them to a private server and add
+                            the bot to that server. Some time ago, discord implemented per app emojis, which allow apps
+                            to upload up to 2,000 emojis, against the 50 of a private server. We are now using app
+                            emojis!
+                        </p>
+
+                        <h4 class="mt-5 " data-i18n="1_0-changelog-bug_fixes">
+                            <i class="fa-solid fa-bug me-2"></i> Bug Fixes
+                        </h4>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-bug_fixes-text">
+                            Many bugs have been fixed, including connectivity issues,
+                            and some minor bugs. This update was huge as well, and I made a big effort to make this
+                            update bug-free. This doesn't mean that there will be no bug at all, so if you find any,
+                            please report it to the support server, I'll do my best to fix it as soon as possible.
+                        </p>
+
+                        <h4 class="mt-5 " data-i18n="1_0-changelog-not_related">
+                            <i class="fa-solid fa-plus me-2"></i> Related Changes
+                        </h4>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-not_related-text">
+                            While these changes are not directly related to the bot, we made some changes that improve
+                        your experience with the bot.
+                        </p>
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-not_related-text2">
+                            I've created this documentation to keep track of all the changes that we made to the bot,
+                            in a pretty way, as well as including the Terms of Service and Privacy Policy.
+                            (Thanks <a class="a-footer" href="https://github.com/Agusfoutel" rel="noopener noreferrer"
+                                       target="_blank"><i class="fa-brands fa-github icon-change"></i>
+                            Agusfoutel</a> for the website design and development!)
+                        </p>
+
+                        <p class="text-secondary-emphasis" data-i18n="1_0-changelog-not_related-text3">
+                        Regarding infrastructure, I've made many changes to the server and the internet connections.
+                        Providing higher Speed and stability to the bot
+                        </p>
+
+                    </div>
+
+                    <!-- Verified App -->
+                    <div class="box verified">
+
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h2 class="visually-hidden" id="verified-app"><i
+                                    class="fa-solid fa-check me-2 icon-primary"></i>
+                                <span data-i18n="verified-app_title">Verified App</span></h2>
+                            <span>
+                                <span class="me-1 verified-badge"><i class="fa-solid fa-check me-2"></i>APP</span>
+                                <span data-i18n="verified-app_text">TreeBot is now a verified Discord App!</span>
+                            </span>
+                            <div class="d-flex align-items-center justify-content-end flex-column">
+                                <span class="badge bg-primary ms-auto"><i class="fa-solid fa-calendar me-2"></i>2025-03-05</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- V 0.2.3 -->
+                    <div class="box">
+
+                        <div class="d-flex align-items-center justify-content-between">
+                            <h2 class=" mb-0 fs-2" data-version="0.2.3" id="vote-rewards-0-2-3"><i
+                                    class="fa-solid fa-gift icon-primary me-2"></i>
                                 <span data-i18n="0-2-3_title">Vote Rewards</span>
                             </h2>
                             <div class="d-flex align-items-center justify-content-end flex-column">
-                                <span class="text-secondary text-end ms-auto"><i class="fa-solid fa-hashtag me-2"></i>V 0.2.3</span>
-                                <span class="text-secondary text-end ms-auto"><i class="fa-solid fa-calendar me-2"></i>2024-07-14</span>
+                                <span class="badge bg-primary ms-auto"><i
+                                        class="fa-solid fa-hashtag me-2"></i>V 0.2.3</span>
+                                <span class="badge bg-primary ms-auto mt-2"><i class="fa-solid fa-calendar me-2"></i>2024-07-14</span>
                             </div>
                         </div>
                         <div class="d-flex justify-content-start gap-2 flex-wrap mt-2">
@@ -109,9 +619,10 @@
                             </span>
                         </div>
 
-                        <h4 class="mt-3 " data-i18n="0-2-3_description">
+                        <h4 class="mt-5 " data-i18n="0-2-3_description">
                             Included vote rewards</h4>
-                        <p class="text-secondary-emphasis" data-i18n="0-2-3_text1">As you read! you can now vote for TreeBot on
+                        <p class="text-secondary-emphasis" data-i18n="0-2-3_text1">As you read! you can now vote for
+                            TreeBot on
                             <a href="https://top.gg/bot/1169844816176230480/vote" rel="noopener noreferrer"
                                target="_blank">Top.gg</a> and
                             <a href="https://discordbotlist.com/bots/treebot-1943/upvote" rel="noopener noreferrer"
@@ -119,11 +630,12 @@
                             to get <b class="square-badge">5x 🪴 Mega Fertilizers</b>, just for voting!
                         </p>
 
-                        <p data-i18n="0-2-3_text2" class="text-secondary-emphasis">And of course, the <span class="discord-command">/vote</span> command
+                        <p class="text-secondary-emphasis" data-i18n="0-2-3_text2">And of course, the <span
+                                class="discord-command">/vote</span> command
                             was added, so you
                             can access the vote links easily</p>
 
-                        <div class="alert alert-info mt-3" role="alert">
+                        <div class="alert alert-info mt-2" role="alert">
                             <h5><i class="fa-solid fa-info-circle me-2"></i> <span data-i18n="note">Note</span></h5>
                             <p class="text-secondary mb-0" data-i18n="0-2-3_text3">While Top.gg notifies Treebot
                                 instantly about your vote,
@@ -131,7 +643,7 @@
                                 to wait at least an hour to get the reward for DiscordBotList.</p>
                         </div>
 
-                        <h4 class="mt-3 " data-i18n="0-2-3_text4"><i class="fa-solid fa-bug me-2"></i>Some bugs fixes
+                        <h4 class="mt-5" data-i18n="0-2-3_text4"><i class="fa-solid fa-bug me-2"></i>Some bugs fixes
                         </h4>
                         <ul class="list-group">
                             <li class="list-group-item text-secondary-emphasis" data-i18n="0-2-3_updated-libraries">
@@ -150,15 +662,17 @@
 
                     </div>
 
+                    <!-- V 0.2.2 -->
                     <div class="box">
 
                         <div class="d-flex align-items-center justify-content-between">
-                            <h2 class=" mb-0 fs-2" id="bug-0-2-2" data-version="0.2.2"><i class="fa-solid fa-bug icon-primary me-2"></i>
+                            <h2 class=" mb-0 fs-2" data-version="0.2.2" id="bug-0-2-2"><i
+                                    class="fa-solid fa-bug icon-primary me-2"></i>
                                 <span data-i18n="0-2-2_title">Bug fixes</span>
                             </h2>
                             <div class="d-flex align-items-center justify-content-end flex-column">
-                                <span class="text-secondary text-end ms-auto"><i class="fa-solid fa-hashtag me-2"></i>V 0.2.2</span>
-                                <span class="text-secondary text-end ms-auto"><i class="fa-solid fa-calendar me-2"></i>2024-06-29</span>
+                                <span class="badge bg-primary ms-auto"><i class="fa-solid fa-calendar me-2"></i>2024-06-29</span>
+                                <span class="badge bg-primary ms-auto mt-2"><i class="fa-solid fa-hashtag me-2"></i>V 0.2.2</span>
                             </div>
                         </div>
                         <div class="d-flex justify-content-start gap-2 flex-wrap mt-2">
@@ -170,18 +684,19 @@
 
                         <h4 class="mt-3 " data-i18n="0-2-2_help-cmd-not-searching">
                             <i class="fa-solid fa-question me-2"></i>Help command not searching</h4>
-                        <p data-i18n="0-2-2_text1" class="text-secondary-emphasis">The
+                        <p class="text-secondary-emphasis" data-i18n="0-2-2_text1">The
                             <span class="discord-command">/help</span> command was not
-                            searching for the command you wanted to know information about. Looks like it was blocking
+                            searching for the command you wanted to know information about. It looks like it was blocking
                             all command descriptions as "admin commands" and admin commands aren't shown in the help
                             command. All of this was now fixed</p>
 
                         <h4 class="mt-3" data-i18n="0-2-2_multilang-help">Multi-language help command searching</h4>
-                        <p data-i18n="0-2-2_text2" class="text-secondary-emphasis">You are now able to search help for
+                        <p class="text-secondary-emphasis" data-i18n="0-2-2_text2">You are now able to search help for
                             commands in any language, this was not working.</p>
 
                         <h4 class="mt-3" data-i18n="0-2-2_other-fixes">Commands translation not displaying</h4>
-                        <p data-i18n="0-2-2_text3" class="text-secondary-emphasis">The translations for these commands were not displayed on the discord client:</p>
+                        <p class="text-secondary-emphasis" data-i18n="0-2-2_text3">The translations for these commands
+                            were not displayed on the discord client:</p>
                         <ul class="list-group">
                             <li class="list-group-item text-secondary-emphasis" data-i18n="0-2-2_water">
                                 <span class="discord-command">/water</span>
@@ -196,15 +711,18 @@
 
                     </div>
 
+                    <!-- V 0.2 -->
                     <div class="box">
 
                         <div class="d-flex align-items-center justify-content-between">
-                            <h2 class=" mb-0 fs-2" id="shop-0-2" data-version="0.2"><i class="fa-solid fa-cart-shopping icon-primary me-2"></i>
+                            <h2 class=" mb-0 fs-2" data-version="0.2" id="shop-0-2"><i
+                                    class="fa-solid fa-cart-shopping icon-primary me-2"></i>
                                 <span data-i18n="0-2_title">The Shop Update</span>
                             </h2>
                             <div class="d-flex align-items-center justify-content-end flex-column">
-                                <span class="text-secondary text-end ms-auto"><i class="fa-solid fa-hashtag me-2"></i>V 0.2</span>
-                                <span class="text-secondary text-end ms-auto"><i class="fa-solid fa-calendar me-2"></i>2024-05-26</span>
+                                <span class="badge bg-primary ms-auto"><i
+                                        class="fa-solid fa-hashtag me-2"></i>V 0.2</span>
+                                <span class="badge bg-primary ms-auto mt-2"><i class="fa-solid fa-calendar me-2"></i>2024-05-26</span>
                             </div>
                         </div>
                         <div class="d-flex justify-content-start gap-2 flex-wrap mt-2">
@@ -242,7 +760,7 @@
                                 <i class="fa-solid fa-leaf me-2"></i>Fertilizer now lasts longer
                             </li>
                             <li class="list-group-item text-secondary-emphasis" data-i18n="0-2_text7">
-                                <i class="fa-solid fa-leaf me-2"></i>Fertilizer grow rate changed
+                                <i class="fa-solid fa-leaf me-2"></i>Fertilizer growth rate changed
                             </li>
                             <li class="list-group-item text-secondary-emphasis" data-i18n="0-2_text8">
                                 <i class="fa-solid fa-apple-whole me-2"></i>Fruit earning is now public
@@ -254,8 +772,8 @@
 
                         <h4 class="mt-5 " data-i18n="0-2_text1">
                             <i class="fa-solid fa-palette me-2"></i>Customization shop completely redesigned </h4>
-                        <p data-i18n="0-2_text10" class="text-secondary-emphasis">
-                            With this update, you can now view four backgrounds per page, making it easier to browse
+                        <p class="text-secondary-emphasis" data-i18n="0-2_text10">
+                            With this update, you can now view four backgrounds per a page, making it easier to browse
                             the shop and find exactly what you're looking for. This enhancement reduces the total
                             number of background pages from <span class="square-badge">36</span> to just
                             <span class="square-badge">9</span>, streamlining your shopping experience.
@@ -263,14 +781,14 @@
                         <ul class="list-group list-group-horizontal-sm mt-2">
                             <li class="list-group-item text-secondary-emphasis">
                                 <span class="square-badge mb-2" data-i18n="0-2_text11">Old Shop (0.1.x)</span>
-                                <img src="../img/old_shop0.1.x.png" class="img-fluid mt-2" alt="Old Shop">
+                                <img alt="Old Shop" class="img-fluid mt-2" src="../img/old_shop0.1.x.png">
                             </li>
                             <li class="list-group-item text-secondary-emphasis">
                                 <span class="square-badge mb-2" data-i18n="0-2_text12">New Shop (0.2.0)</span>
-                                <img src="../img/new_shop0.2.0.png" class="img-fluid mt-2" alt="New Shop">
+                                <img alt="New Shop" class="img-fluid mt-2" src="../img/new_shop0.2.0.png">
                             </li>
                         </ul>
-                        <p data-i18n="0-2_text13" class="text-secondary-emphasis mt-2">
+                        <p class="text-secondary-emphasis mt-2" data-i18n="0-2_text13">
                             As well, you can see below every background the actual price, or if the background was
                             already bought by you or another user, it will say <span class="square-badge">Bought by [user]</span>
                             (User can also be replaced with <span class="square-badge">TreeBot</span> for the default
@@ -280,16 +798,16 @@
 
                         <h4 class="mt-3 " data-i18n="0-2_text14">
                             <i class="fa-solid fa-user me-2"></i>User Profiles </h4>
-                        <p data-i18n="0-2_text15" class="text-secondary-emphasis">
+                        <p class="text-secondary-emphasis" data-i18n="0-2_text15">
                             Did you ever want to see your inventory without opening the shop? It is now possible with
                             <span class="discord-command">/profile</span>! You can see your own profile by leaving the
                             <span class="square-badge">user</span> field empty or fill it with a user to see the
-                            profile of that user. And as we know you want to show those amazing 6 coins you got from
+                            profile of that user. And as we know you want to show those amazing six coins you got from
                             a fruit, you can set the <span class="square-badge">public</span> field to
                             <span class="square-badge">Yes</span> so other users can see your amazing progress on the
                             server and globally.
                         </p>
-                        <p data-i18n="0-2_text16" class="text-secondary-emphasis">
+                        <p class="text-secondary-emphasis" data-i18n="0-2_text16">
                             Wait... Server progress? Yes, Since the <span class="square-badge">0.1.0</span>,
                             Treebot was saving how many times you watered the tree, how many times you fertilized the
                             tree, how many times you mega fertilized the tree, how many fruits you got, and the
@@ -297,21 +815,22 @@
                             <span class="discord-command">/profile</span>
                         </p>
 
-                        <img src="../img/profile0.2.png" class="img-fluid mt-2 rounded-3 " alt="Profile">
+                        <img alt="Profile" class="img-fluid mt-2 rounded-3 " src="../img/profile0.2.png">
 
                         <h4 class="mt-3 " data-i18n="0-2_text17">
                             <i class="fa-solid fa-apple-whole me-2"></i>Fruits rates </h4>
-                        <p data-i18n="0-2_text18" class="text-secondary-emphasis">
+                        <p class="text-secondary-emphasis" data-i18n="0-2_text18">
                             Fruit Rates have been implemented, now you will get a certain number of fruits
                             depending on how long the tree is. Before this was always a certain possibility
-                            to get 1 fruit, now you have that possibility to get more fruit depending on the height.
+                            to get one fruit. Now you have that possibility to get more fruit depending on the height.
                         </p>
-                        <i class="text-secondary-emphasis" data-i18n="0-2_text18-note">Note: Fertilizers will make the fruits have more probabilities to appear,
-                        but does not give you more fruits.</i>
+                        <i class="text-secondary-emphasis" data-i18n="0-2_text18-note">Note: Fertilizers will make the
+                            fruits have more probabilities to appear,
+                            but do not give you more fruits.</i>
 
                         <h4 class="mt-3 " data-i18n="0-2_text19">
                             <i class="fa-solid fa-stopwatch me-2"></i>Per-server cooldown </h4>
-                        <p data-i18n="0-2_text20" class="text-secondary-emphasis">
+                        <p class="text-secondary-emphasis" data-i18n="0-2_text20">
                             Have you ever tried to water two different servers' trees at the same time and got a
                             cooldown message? Now you can water as many server trees as you want at the same time!
                             <i>This change does not modify the cooldown time, it just separates your cooldown
@@ -320,7 +839,7 @@
 
                         <h4 class="mt-3 " data-i18n="0-2_text21">
                             <i class="fa-solid fa-lock me-2"></i>Administration systems got better</h4>
-                        <p data-i18n="0-2_text22" class="text-secondary-emphasis">
+                        <p class="text-secondary-emphasis" data-i18n="0-2_text22">
                             This is not an update that users can see directly. However, with this we (TreeBot Staff)
                             can manage user/server profiles way easier, making it better for everyone as staff will
                             be able to solve any problem user might have.
@@ -328,28 +847,29 @@
 
                         <h4 class="mt-3 " data-i18n="0-2_text23">
                             <i class="fa-solid fa-leaf me-2"></i>Fertilizer now lasts longer</h4>
-                        <p data-i18n="0-2_text24" class="text-secondary-emphasis">
+                        <p class="text-secondary-emphasis" data-i18n="0-2_text24">
                             Before, the fertilizer and the mega fertilizer would only raise the tree boost for the
                             next watering and nothing more. To make it more considerate with other users, the boost
                             of the tree will get reduced to 10% by each watering, so, if my tree has a 30 % boost, it
                             will last 3 watering <span class="square-badge">30%
-                            <i class="fa-solid fa-arrow-right mx-2"></i> 20% <i class="fa-solid fa-arrow-right mx-2"></i>
+                            <i class="fa-solid fa-arrow-right mx-2"></i> 20% <i
+                                    class="fa-solid fa-arrow-right mx-2"></i>
                             10% <i class="fa-solid fa-arrow-right mx-2"></i> 0%</span>
                         </p>
 
                         <h4 class="mt-3 " data-i18n="0-2_text25">
-                            <i class="fa-solid fa-leaf me-2"></i>Fertilizer grow rate changed</h4>
-                        <p data-i18n="0-2_text26" class="text-secondary-emphasis">
+                            <i class="fa-solid fa-leaf me-2"></i>Fertilizer growth rate changed</h4>
+                        <p class="text-secondary-emphasis" data-i18n="0-2_text26">
                             Fertilizers had a fixed metres grow value, now it depends on the boost. For example,
                             if the boost is 40%, the tree will grow by
-                            <span class="square-badge">4 + (40 - 30) / 10 * 3 = 7</span> metres.
+                            <span class="square-badge">4 + (40–30) / 10 * 3 = 7</span> metres.
 
                             4 (boost-30)/10*3)
                         </p>
 
                         <h4 class="mt-3 " data-i18n="0-2_text27">
                             <i class="fa-solid fa-apple-whole me-2"></i>Fruit earning is now public</h4>
-                        <p data-i18n="0-2_text28" class="text-secondary-emphasis">
+                        <p class="text-secondary-emphasis" data-i18n="0-2_text28">
                             When you watered a tree and got a fruit, nobody could see that amazing fruit you got, so
                             now everyone can see what you got on the watering message! (Tree message, or the
                             notification channel)
@@ -358,17 +878,18 @@
                         <ul class="list-group mt-2 list-group-horizontal-sm ">
                             <li class="list-group-item text-secondary-emphasis">
                                 <span class="square-badge mb-2" data-i18n="0-2_text29">Tree Message</span>
-                                <img src="../img/treefruitsearning.png" class="img-fluid mt-2" alt="Tree Message">
+                                <img alt="Tree Message" class="img-fluid mt-2" src="../img/treefruitsearning.png">
                             </li>
                             <li class="list-group-item text-secondary-emphasis">
                                 <span class="square-badge mb-2" data-i18n="0-2_text30">Notification channel</span>
-                                <img src="../img/notificationfruits.png" class="img-fluid mt-2" alt="Notification channel">
+                                <img alt="Notification channel" class="img-fluid mt-2"
+                                     src="../img/notificationfruits.png">
                             </li>
                         </ul>
 
                         <h4 class="mt-3 " data-i18n="0-2_text31">
                             <i class="fa-solid fa-bug me-2"></i>Bug fixes</h4>
-                        <p data-i18n="0-2_text32" class="text-secondary-emphasis">
+                        <p class="text-secondary-emphasis" data-i18n="0-2_text32">
                             Some bugs fixes
                         </p>
                     </div>

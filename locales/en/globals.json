@@ -11,5 +11,8 @@
   "translated_by": "Translated by AI. Please report any errors.",
   "menu_home": "Home",
   "menu_terms": "Terms of Service",
-  "menu_changelog": "Changelog"
+  "menu_changelog": "Changelog",
+  "language_en": "English",
+  "language_es": "Spanish",
+  "language_fr": "French"
 }

@@ -100,11 +100,27 @@
     font-size: 0.8em;
     white-space: nowrap;
     transition: all 0.3s ease;
+    width: fit-content;
+    cursor: default;
+
 }
 
 .square-badge:hover {
     background-color: var(--color-link-hover);
     color: var(--text-color-link-hover);
+}
+
+.square-badge-command {
+    padding: 0.1rem 0.1rem;
+    border-radius: 5px;
+    border: 1px solid var(--border-color);
+    color: var(--color-font);
+    font-size: 0.8em;
+    white-space: nowrap;
+    transition: all 0.3s ease;
+    width: fit-content;
+    cursor: default;
+
 }
 
 .square-badge-secondary {
@@ -115,6 +131,7 @@
     font-size: 0.8em;
     white-space: nowrap;
     transition: all 0.3s ease;
+    cursor: default;
 }
 
 
@@ -140,6 +157,7 @@
     margin: 0 auto 15px auto;
     background-color: var(--border-color);
 }
+
 
 @keyframes heartBeat {
     0% { transform: scale(1); }
@@ -189,4 +207,18 @@
     border-left: 3px solid var(--color-link);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     flex-direction: column;
+}
+
+.verified {
+    border: #008fe2 1px solid;
+}
+
+.verified-badge {
+    background-color: #5865f2;
+    color: #fff;
+    padding: 0.1rem 0.5rem;
+    border-radius: 5px;
+    font-size: 0.8em;
+    white-space: nowrap;
+    transition: all 0.3s ease;
 }

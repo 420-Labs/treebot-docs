@@ -11,5 +11,8 @@
   "translated_by": "Traducido con IA, Por favor reporta cualquier error",
   "menu_home": "Inicio",
   "menu_terms": "Términos y condiciones",
-  "menu_changelog": "Actualizaciones"
+  "menu_changelog": "Actualizaciones",
+  "language_en": "Inglés",
+  "language_es": "Español",
+  "language_fr": "Francés"
 }

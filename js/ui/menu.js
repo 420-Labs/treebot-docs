@@ -25,7 +25,7 @@ function generateLeftMenu(menuId) {
         const li = document.createElement('li');
         li.className = 'sidebar-nav-item';
 
-        // Mark active page
+        // Mark the active page
         const isHome = page.url === '/index.html' && (
             pathname === '/' ||
             pathname.endsWith('/index.html') ||
@@ -55,7 +55,7 @@ function generateLeftMenu(menuId) {
     });
 }
 
-// Generate content menu (for headings in the page)
+// Generate the content menu (for headings in the page)
 function generateContentMenu() {
     const content = document.getElementById('content');
     const desktopMenu = document.getElementById('desktop-menu');
