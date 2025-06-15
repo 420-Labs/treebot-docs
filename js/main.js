@@ -19,6 +19,11 @@ function init() {
         window.setupScrollSpy();
     }
 
+    // Set up copy link on click
+    if (typeof window.setupCopyLinkOnClick === 'function') {
+        window.setupCopyLinkOnClick();
+    }
+
     // Initialize language selector
     initLanguageSelector();
 

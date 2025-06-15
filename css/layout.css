@@ -222,3 +222,13 @@
     white-space: nowrap;
     transition: all 0.3s ease;
 }
+
+.status-badge {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.first-title {
+    padding-top: 100px;
+}

@@ -1,0 +1,20 @@
+{
+  "title": "Bug Tracker",
+  "meta_description": "Track and view bugs for TreeBot",
+  "description": "View and track bugs for TreeBot",
+  "order": "<i class=\"fa-solid fa-arrow-down me-2\"></i>Bugs are displayed from newest to oldest",
+  "no_bugs": "No bugs found. Great job!",
+  "bug_id": "Bug ID",
+  "bug_title": "Title",
+  "bug_description": "Description",
+  "bug_status": "Status",
+  "bug_date": "Reported Date",
+  "bug_fixed_date": "Fixed Date",
+  "bug_reporter": "Reported By",
+  "status_open": "Open",
+  "status_in_progress": "In Progress",
+  "status_fixed": "Fixed",
+  "status_wont_fix": "Won't Fix",
+  "status_duplicate": "Duplicate",
+  "copy_link": "Click to copy link to this bug"
+}

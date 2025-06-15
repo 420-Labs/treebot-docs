@@ -5,6 +5,7 @@ const pages = [
     {name: 'menu_home', url: '/treebot-docs/index.html', icon: 'home'},
     {name: 'menu_terms', url: '/treebot-docs/docs/terms.html', icon: 'gavel'},
     {name: 'menu_changelog', url: '/treebot-docs/docs/changelog.html', icon: 'history'},
+    {name: 'menu_bugs', url: '/treebot-docs/docs/bugs.html', icon: 'bug'},
     // Add more pages here
 ];
 
