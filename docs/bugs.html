@@ -21,9 +21,19 @@
     <style>
         .bug-title {
             cursor: pointer;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+            position: relative;
         }
-        .bug-title:hover {
-            text-decoration: underline var(--color-link);
+
+        .bug-title-text {
+            transition: all 0.3s ease;
+            border-radius: 5px;
+            padding: 0.2rem 0.2rem;
+        }
+
+        .bug-title:hover .bug-title-text {
+            background-color: var(--color-link-hover);
         }
         .status-badge {
             font-size: 0.8rem;
@@ -65,10 +75,7 @@
         .bug-item:last-child {
             border-bottom: none;
         }
-        #bugs-url-form {
-            margin-bottom: 20px;
-        }
-        //* Highlight súper simple para bugs */
+
         .bug-item {
             border-bottom: 1px solid var(--border-color);
             padding: 10px 0;
@@ -161,12 +168,6 @@
                     <span class="material-symbols-rounded" id="actualThemeIcon">dark_mode</span>
                 </span>
             </div>
-            <!-- Botón hamburguesa para celular -->
-            <button aria-controls="sidebarContent" aria-expanded="false" aria-label="Toggle navigation"
-                    class="navbar-toggler"
-                    data-bs-target="#sidebarContent" data-bs-toggle="collapse" type="button">
-                <span class="navbar-toggler-icon"></span>
-            </button>
         </div>
     </nav>
 </header>
@@ -329,7 +330,7 @@
                 <div class="d-flex justify-content-between align-items-start">
                     <h3 class="fs-5 bug-title" data-bug-id="${bug.id}">
                         <span class="badge bg-secondary me-2">${bug.id}</span>
-                        ${bug.title}
+                        <span class="bug-title-text">${bug.title}</span>
                     </h3>
                     <div>
                         ${getStatusBadge(bug.status)}
