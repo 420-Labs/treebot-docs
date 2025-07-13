@@ -141,6 +141,18 @@
   "1_0-changelog-not_related": "<i class=\"fa-solid fa-plus me-2\"></i> Cambios Relacionados",
   "1_0-changelog-not_related-text": "Aunque estos cambios no están directamente relacionados con el bot, hicimos algunos cambios que mejoran tu experiencia con el bot.",
   "1_0-changelog-not_related-text2": "He creado esta documentación para hacer un seguimiento de todos los cambios que hicimos al bot, de una manera bonita, así como incluyendo los Términos de Servicio y la Política de Privacidad. (¡Gracias <a class=\"a-footer\" href=\"https://github.com/Agusfoutel\" rel=\"noopener noreferrer\" target=\"_blank\"><i class=\"fa-brands fa-github icon-change\"></i>Agusfoutel</a> por el diseño y desarrollo del sitio web!)",
-  "1_0-changelog-not_related-text3": "Con respecto a la infraestructura, he hecho muchos cambios al servidor y las conexiones de internet. Proporcionando mayor velocidad y estabilidad al bot"
+  "1_0-changelog-not_related-text3": "Con respecto a la infraestructura, he hecho muchos cambios al servidor y las conexiones de internet. Proporcionando mayor velocidad y estabilidad al bot",
+  "1_1-title": "Nuevas insignias",
+  "1-1_date": "2025-06-13",
+  "1_1-new_badges_title": "<i class=\"fa-solid fa-list-ul me-2\"></i> Nuevas insignias",
+  "1_1-new_badges_description": "¡Las nuevas insignias ya están disponibles! Insignias del nivel 12 al nivel 17.",
+  "1_1-changed_badges_rate_title": "<i class=\"fa-solid fa-list-ul me-2\"></i> Multiplicador de insignias modificado",
+  "1_1-changed_badges_rate_description": "El multiplicador de insignias ha sido cambiado de 2.5X a 2.0X",
+  "1_1-changelog-badge_vault-table_header": "Insignias antiguas y nuevas",
+  "1_1-changelog-badge_vault-table_header_level": "Nivel",
+  "1_1-changelog-badge_vault-table_header_multiplier": "2.5X",
+  "1_1-changelog-badge_vault-table_header_price": "2.0X",
+  "bug-fixes": "Corrección de errores",
+  "1_1-bug-fixes-bug-1": "BUG-005"
 
 }

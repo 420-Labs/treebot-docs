@@ -140,5 +140,17 @@
   "1_0-changelog-not_related": "<i class=\"fa-solid fa-plus me-2\"></i> Related Changes",
   "1_0-changelog-not_related-text": "While these changes are not directly related to the bot, we made some changes that improve your experience with the bot.",
   "1_0-changelog-not_related-text2": "I've created this documentation to keep track of all the changes that we made to the bot, in a pretty way, as well as including the Terms of Service and Privacy Policy. (Thanks <a class=\"a-footer\" href=\"https://github.com/Agusfoutel\" rel=\"noopener noreferrer\" target=\"_blank\"><i class=\"fa-brands fa-github icon-change\"></i>Agusfoutel</a> for the website design and development!)",
-  "1_0-changelog-not_related-text3": "Regarding infrastructure, I've made many changes to the server and the internet connections. Providing higher Speed and stability to the bot"
+  "1_0-changelog-not_related-text3": "Regarding infrastructure, I've made many changes to the server and the internet connections. Providing higher Speed and stability to the bot",
+  "1_1-title": "New badges",
+  "1-1_date": "2025-06-13",
+  "1_1-new_badges_title": "<i class=\"fa-solid fa-list-ul me-2\"></i> New badges",
+  "1_1-new_badges_description": "The new badges are now available! Badges from level 12 to level 17.",
+  "1_1-changed_badges_rate_title": "<i class=\"fa-solid fa-list-ul me-2\"></i> Changed badges multiplier",
+  "1_1-changed_badges_rate_description": "The badges multiplier has been changed from 2.5X to 2.0X",
+  "1_1-changelog-badge_vault-table_header": "Old and new badges",
+  "1_1-changelog-badge_vault-table_header_level": "Level",
+  "1_1-changelog-badge_vault-table_header_multiplier": "2.5X",
+  "1_1-changelog-badge_vault-table_header_price": "2.0X",
+  "bug-fixes": "Bug Fixes",
+  "1_1-bug-fixes-bug-1": "BUG-005"
 }
