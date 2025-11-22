@@ -152,5 +152,9 @@
   "1_1-changelog-badge_vault-table_header_multiplier": "2.5X",
   "1_1-changelog-badge_vault-table_header_price": "2.0X",
   "bug-fixes": "Bug Fixes",
-  "1_1-bug-fixes-bug-1": "BUG-005"
+  "1_1-bug-fixes-bug-1": "BUG-005",
+  "1_2-1-title": "Changed vote rewards",
+  "1-2_date": "2025-11-22",
+  "1_2-1-changed_rewards_title": "<i class=\"fa-solid fa-list-ul me-2\"></i> Changed vote rewards",
+  "1_2-1-changed_rewards_description": "The rewards for voting have been changed from <span class=\"square-badge\">5X 🪴Mega Fertilizers</span> to <span class=\"square-badge\">100x 🪙 Coins</span>, meaning you could get 2000 coins in a day for free!"
 }

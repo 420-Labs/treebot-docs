@@ -153,6 +153,13 @@
   "1_1-changelog-badge_vault-table_header_multiplier": "2.5X",
   "1_1-changelog-badge_vault-table_header_price": "2.0X",
   "bug-fixes": "Corrección de errores",
-  "1_1-bug-fixes-bug-1": "BUG-005"
+  "1_1-bug-fixes-bug-1": "BUG-005",
+
+
+  "1_2-1-title": "Recompensas de voto modificadas",
+  "1-2_date": "2025-11-22",
+  "1_2-1-changed_rewards_title": "<i class=\"fa-solid fa-list-ul me-2\"></i> Recompensas de voto modificadas",
+  "1_2-1-changed_rewards_description": "Las recompensas por votar han sido cambiadas de <span class=\"square-badge\">5X 🪴Mega Fertilizantes</span> a <span class=\"square-badge\">100x 🪙 Monedas</span>, ¡lo que significa que podrías obtener 2000 monedas en un día gratis!"
+
 
 }

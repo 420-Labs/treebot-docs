@@ -144,5 +144,10 @@
   "1_1-changelog-badge_vault-table_header_multiplier": "2.5X",
   "1_1-changelog-badge_vault-table_header_price": "2.0X",
   "bug-fixes": "Corrections de bugs",
-  "1_1-bug-fixes-bug-1": "BUG-005"
+  "1_1-bug-fixes-bug-1": "BUG-005",
+
+  "1_2-1-title": "Récompenses de vote modifiées",
+  "1-2_date": "2025-11-22",
+  "1_2-1-changed_rewards_title": "<i class=\"fa-solid fa-list-ul me-2\"></i> Récompenses de vote modifiées",
+  "1_2-1-changed_rewards_description": "Les récompenses pour voter ont été changées de <span class=\"square-badge\">5X 🪴Méga Engrais</span> à <span class=\"square-badge\">100x 🪙 Pièces</span>, ce qui signifie que vous pourriez obtenir 2000 pièces par jour gratuitement !"
 }
